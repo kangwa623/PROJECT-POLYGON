@@ -1,0 +1,161 @@
+/* file: signupStyleSheet.css */
+
+:root {
+    --base-color: whitesmoke;
+    --base2-color: white;
+    --base3-color: lightgrey;
+    --base4-color: black;
+    --accent-color: #0095B7;
+    --accent2-color: #30BFBF;
+}
+
+body, .window {
+    background-color: var(--base-color);
+}
+
+.window, .logo-frame, label > input, #signUpButton, #signInButtonG, #create, fieldset, input, .seperator-core {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#create, #signUpButton, #signInButtonG, label > input {
+    width: 240px;
+    height: 40px;
+    margin: 13px 0px;
+}
+
+#signInButton, #signInButtonG {
+    border-radius: 5px;
+    margin-bottom: 7px;
+    margin-top: 0;
+    width: 250px;
+    height: 50px;
+}
+
+#create, #sign-up, #show-tell {
+    font-family: "Helvetica", "Montserrat";
+}
+
+#signUpButton, #signInButtonG, .logical-or-seperator > span {
+    font-family: "Roboto mono", "Helvetica";
+}
+
+
+#polygon-logo {
+    height: 30px;
+    margin-top: 20px;
+}
+
+.window {
+    height: 85vh;
+}
+
+.window2 {
+    height: 395px;
+    width: 300px; 
+    background-color: var(--base2-color);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.logo-frame {
+    margin-bottom: 0px;
+}
+
+#create {
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0px;
+}
+
+#show-tell {
+    margin-top: 3px;
+    margin-bottom: 6px;
+    font-size: 12px;
+}
+
+fieldset {
+    flex-direction: column;
+    gap: 0px;
+    border: none; 
+    margin: 0 10px;
+    height: 400px;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+label > input:hover {
+    box-shadow: 0px 0px 10px var(--accent-color); 
+}
+
+#signUpButton {
+    background-color: var(--accent-color);
+    color: var(--base2-color);
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-bottom: 7px;
+    margin-top: 0;
+    width: 250px;
+    height: 50px;
+}
+
+#signUpButton:hover {
+    cursor: pointer;
+    background-color: var(--accent2-color);
+    color: var(--base2-color);
+}
+
+#sign-up {
+    font-size: 11px;
+}
+
+#sign-up > a {
+    text-decoration: none;
+    color: var(--accent-color);
+}
+
+#sign-up > a:active {
+    background-color: var(--accent2-color);
+    color: var(--base2-color);
+}
+
+.logical-or-seperator {
+    display: flex;
+    align-items: center;
+    margin: -4px 0;
+}
+
+.line {
+    flex-grow: 1;
+    height: 0px;
+    width: 110px;
+    color: var(--accent-color);
+    margin: 22px 3px;
+    border-radius: 10px;
+}
+
+.logical-or-seperator > span {
+    font-size: 12px;
+    font-weight: bold;
+    color: var(--base4-color);
+}
+
+#signInButtonG {
+    border: 0.1px solid var(--base4-color);
+    background-color: var(--base2-color);
+}
+
+#signInButtonG:hover {
+    background-color: var(--base3-color);
+    cursor: pointer;
+}
+
+#google-logo {
+    width: 16px;
+}
+
+#google-span {
+    width: 20px;
+}

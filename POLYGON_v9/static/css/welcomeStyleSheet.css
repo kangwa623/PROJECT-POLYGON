@@ -1,0 +1,73 @@
+/* file: welcomeStyleSheet.css */
+
+:root {
+    --base-color: whitesmoke;
+    --base2-color: white;
+    --base3-color: lightgrey;
+    --base4-color: black;
+    --accent-color: #0095B7;
+    --accent2-color: #30BFBF;
+}
+
+.window, .logo-frame, .main-text, .sub-text, fieldset {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-text, .sub-text, button {
+    font-family: "Roboto mono", "Helvetica";
+}
+
+.logo-frame, .main-text, .sub-text {
+    margin-bottom: 15px;
+}
+
+body {
+    background-color: var(--base-color);
+}
+
+.window {
+    height: 113vh;
+}
+
+.window2 {
+    height: 300px;
+    width: 700px; 
+    background-color: var(--base-color);
+}
+
+#polygon-logo {
+    height: 85px;
+}
+
+.main-text {
+    font-size: 21.5px;
+}
+
+.sub-text {
+    font-size: 18px;
+}
+
+fieldset {
+    border: none;
+}
+
+button {
+    height: 38px;
+    width: 80px;
+    background-color: var(--accent-color);
+    color: var(--base2-color);
+    border: none;
+    border-radius: 5px;
+    font-size: 13.5px;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: var(--accent2-color);
+}
+
+#space {
+    width: 30px;
+}

@@ -1,0 +1,208 @@
+/* file: indexStyleSheet.css */
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+.content-1, .content-2, .content-3, #video-background, #image-background {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#video-background, #image-background { 
+    top: 38px; 
+    object-fit: cover;
+    border: none;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.content-1, .content-2, .content-3, .navigation-list ul li {
+    top: -110px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.content-1, .content-3 {
+    color: #fff;
+}
+
+h1, h2, h4 {
+    margin: 0;
+}
+
+body, .fixed-bar {
+    background-color: navy; 
+    background: linear-gradient(to right, navy, black);
+}
+
+.fixed-bar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 92.5px;
+    z-index: 999;
+}
+
+.fixed-content {
+    padding: 20px;
+    color: white;
+    font-size: 14px;
+    text-align: center;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    overflow: hidden;
+    transition: background 0.5s ease-in-out;
+}
+
+.video-container {
+    width: 100%;
+    top: 0;
+    overflow: hidden;
+    position: relative;
+}
+
+#video-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+.version {
+    font-size: 50px;
+}
+
+.content-2 {
+    color: black;
+}
+
+.button-container, .navigation-list {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.polygon-title {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    left: 7%;
+    transform: translateX(-50%);
+    text-align: left;
+    padding: 0 20px;
+    top: -10px;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+#poly-toggle-1, #poly-toggle-3 {
+    font-size: 30px;
+    display: flex;
+    position: relative;
+    top: -40px;
+    font-weight: 600;
+    color: white;
+}
+
+#poly-toggle-2 {
+    font-size: 30px;
+    display: flex;
+    position: relative;
+    top: -40px;
+    font-weight: 600;
+    color: black;
+}
+
+.button-container {
+    bottom: 70px; /* Adjust the bottom distance as needed */
+    z-index: 2;
+}
+
+.navigation-list, .polygon-title {
+    top: 100px; /* Adjust the bottom distance as needed */
+    z-index: 99999;
+}
+
+.navigation {
+            background-color: transparent;
+            display: flex;
+            justify-content: space-between;
+            justify-content: center;
+            padding: 10px;
+        }
+
+.navigation-list ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+        }
+
+.navigation-list ul li a, .polygon-title {
+    list-style: none;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 0 20px;
+        }
+
+.navigation-list ul li a:hover {
+    background-color: grey;
+        }
+
+#nav-1 ul li a, #nav-3 ul li a {
+    color: white;
+}
+
+#nav-2 ul li a {
+    color: black;
+}
+
+.navigation-list ul li:hover {
+    color: grey;
+}
+
+.translucent-button {
+    background: rgba(255, 255, 255, 0.6); /* Adjust the alpha (last value) for transparency */
+    color: #000; /* Adjust the text color */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.translucent-button:hover {
+    background: rgba(255, 255, 255, 0.8); /* Adjust the alpha for hover effect */
+}
+
+#btn-gap {
+    height: 50px;
+    width: 50px;
+}
+
